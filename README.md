@@ -13,6 +13,11 @@ OR
 
 java -jar target/demo-config-server-0.0.1-SNAPSHOT.jar   
 
+with active profile   
+=====================   
+java -jar -Dspring.profiles.active=dev target/demo-config-server-0.0.1-SNAPSHOT.jar   
+
+
 # How to add another service config to this server   
 1. add a folder with service name to main/root folder of the git repo used in  spring.cloud.config.server.git.uri property      
 2. add env properties files with {serviceName}-{env}.properties 
